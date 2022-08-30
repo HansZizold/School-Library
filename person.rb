@@ -1,5 +1,10 @@
-class Person
+require_relative('./nameable')
+require_relative('./capitalize')
+require_relative('./trimmer')
+
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = rand(1..1000)
     @name = name
     @age = age
@@ -15,6 +20,10 @@ class Person
     false
   end
 
+  def correct_name
+    @name
+  end
+
   private
 
   def isof_age?
@@ -23,3 +32,10 @@ class Person
     false
   end
 end
+
+person = Person.new(22, 'maximilianus')
+p person.correct_name
+capitalized_person = CapitalizeDecorator.new(person)
+p capitalized_person.correct_name
+capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+p capitalized_trimmed_person.correct_name
