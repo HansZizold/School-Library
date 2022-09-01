@@ -9,10 +9,11 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
   attr_reader :id
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
 
   def can_use_services?
     return true if isof_age? || @parent_permission == true
@@ -31,11 +32,8 @@ class Person < Nameable
 
     false
   end
-end
 
-person = Person.new(22, 'maximilianus')
-p person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-p capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-p capitalized_trimmed_person.correct_name
+  def add_rental(book, date)
+    Rental.new(date, book, self)
+  end
+end
