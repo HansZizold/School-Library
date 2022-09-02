@@ -45,6 +45,8 @@ def menu
       print "Invalid Option\n\n"
     end
   end
+  puts 'Thank you for using this app!'
+  puts "\n"
 end
 # rubocop:enable Metrics/CyclomaticComplexity
 
