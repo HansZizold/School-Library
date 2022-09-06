@@ -1,7 +1,7 @@
-require_relative './student'
-require_relative './teacher'
-require_relative './book'
-require_relative './rental'
+require_relative './lib/student'
+require_relative './lib/teacher'
+require_relative './lib/book'
+require_relative './lib/rental'
 
 class Operations
   def initialize
@@ -52,14 +52,17 @@ class Operations
     puts 'Select a book from the following list by number'
     @books.each.each_with_index { |book, index| puts "#{index}) Title: #{book.title}, Author: #{book.author}" }
     book_index = gets.chomp.to_i
+
     puts 'Select a person from the following list by number (not id)'
     @persons.each_with_index do |person, index|
       type = 'Teacher' if person.specialization != 'unknown'
       puts "#{index}) [#{type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
     person_index = gets.chomp.to_i
+
     print 'Date: '
     date = gets.chomp
+
     @rentals << Rental.new(date, books[book_index], persons[person_index])
     puts 'Rental created successfully'
     puts "\n"
@@ -68,6 +71,7 @@ class Operations
   def list_rentals
     print 'ID of person: '
     person_id = gets.chomp.to_i
+
     person_selected = @persons.select { |person| person.id == person_id }
     puts 'Rentals: '
     person_selected[0].rentals.each do |rental|
