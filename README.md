@@ -14,6 +14,12 @@ If you want to test this project, you need to install Ruby and run ```ruby perso
 - Twitter: [@twitterhandle](https://twitter.com/hanzio27)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hans-paul-zizold-37129037/)
 
+👤 **Ulises Largaespada**
+
+- GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
+- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
+- LinkedIn: [Ulises Largaespada](https://www.linkedin.com/in/ulises-largaespada-45570b1a4/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
