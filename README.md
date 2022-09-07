@@ -20,6 +20,13 @@ If you want to test this project, you need to install Ruby and run ```ruby perso
 - Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
 - LinkedIn: [Ulises Largaespada](https://www.linkedin.com/in/ulises-largaespada-45570b1a4/)
 
+## Authors
+👤 **Nduati Kagiri**
+
+- GitHub: [@NduatiKagiri](https://github.com/NduatiKagiri)
+- Twitter: [@NduatiKagiri](https://twitter.com/NduatiKagiri)
+- LinkedIn: [nduati-kagiri](https://linkedin.com/in/nduati-kagiri/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
