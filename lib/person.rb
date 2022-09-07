@@ -18,6 +18,7 @@ class Person < Nameable
 
   def can_use_services?
     return true if isof_age? || @parent_permission == true
+
     false
   end
 
@@ -29,6 +30,7 @@ class Person < Nameable
 
   def isof_age?
     return true if age >= 18
+
     false
   end
 

@@ -25,11 +25,13 @@ describe BaseDecorator do
       expect(@person1.correct_name).to eq('john')
     end
 
-    it 'The method correct_name for @capitalize object should display the name of the person1 with the first letter capitalized' do
+    it 'The method correct_name for @capitalize object should display
+    the name of the @person1 with the first letter capitalized' do
       expect(@capitalize.correct_name).to eq('John')
     end
 
-    it 'The method correct_name for @capitalize object should display the name of the person1 with the first letter capitalized' do
+    it 'The method correct_name for @trimmer object should display
+    the first 10 characters of the name of the @person2' do
       expect(@trimmer.correct_name).to eq('maximilian')
     end
   end

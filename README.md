@@ -4,7 +4,8 @@
 
 ## Getting Started
 
-If you want to test this project, you need to install Ruby and run ```ruby person.rb```.
+To run this project, you need to install Ruby and run ```ruby main.rb```.
+To run the tests, you need to install rspec for Ruby and run ```rspec spec```.
 
 ## Authors
 
